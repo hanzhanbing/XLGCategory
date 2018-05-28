@@ -28,7 +28,6 @@
 		961CFE9E20A9CDD4005737AC /* UILabel+XLGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE8C20A9CDD4005737AC /* UILabel+XLGAdd.m */; };
 		961CFE9F20A9CDD4005737AC /* UIImage+XLGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE8D20A9CDD4005737AC /* UIImage+XLGAdd.m */; };
 		961CFEA020A9CDD4005737AC /* UIApplication+XLGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE8F20A9CDD4005737AC /* UIApplication+XLGAdd.m */; };
-		A0644CD020BBA8AB001F97AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0644CCF20BBA8AB001F97AB /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +72,6 @@
 		961CFE8F20A9CDD4005737AC /* UIApplication+XLGAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+XLGAdd.m"; sourceTree = "<group>"; };
 		961CFE9020A9CDD4005737AC /* UITabBar+XLGAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+XLGAdd.h"; sourceTree = "<group>"; };
 		961CFE9120A9CDD4005737AC /* UIView+XLGAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XLGAdd.h"; sourceTree = "<group>"; };
-		A0644CCF20BBA8AB001F97AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0644CD020BBA8AB001F97AB /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +192,6 @@
 		A0644CCE20BBA8AB001F97AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0644CCF20BBA8AB001F97AB /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
