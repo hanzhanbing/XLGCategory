@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "XLGCategory.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSString *str = @"测测测";
+    CGFloat width = [str getTextWidthWithFont:[UIFont systemFontOfSize:14] height:20];
+    NSLog(@"%f",width);
+    NSLog(@"%@",[str md5To32bit]);
+    
     return YES;
 }
 
