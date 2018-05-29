@@ -3,7 +3,7 @@
 //  SharenGo
 //  Notes：UITabBar 小红点的设置方法
 //
-//  Created by Jason on 2018/5/14.
+//  Created by Jason_hzb on 2018/5/14.
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
