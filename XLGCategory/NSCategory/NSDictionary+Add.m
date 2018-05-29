@@ -1,5 +1,5 @@
 //
-//  NSDictionary+XLGAdd.m
+//  NSDictionary+Add.m
 //  SharenGo
 //  Notes：
 //
@@ -7,7 +7,7 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "NSDictionary+XLGAdd.h"
+#import "NSDictionary+Add.h"
 
 @implementation NSDictionary (XLGAdd)
 

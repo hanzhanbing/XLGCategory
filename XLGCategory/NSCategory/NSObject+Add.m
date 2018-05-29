@@ -1,5 +1,5 @@
 //
-//  NSObject+XLGAdd.m
+//  NSObject+Add.m
 //  SharenGo
 //  Notes：
 //
@@ -7,7 +7,7 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "NSObject+XLGAdd.h"
+#import "NSObject+Add.h"
 
 @implementation NSObject (XLGAdd)
 

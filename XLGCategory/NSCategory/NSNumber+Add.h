@@ -1,5 +1,5 @@
 //
-//  NSNumber+XLGAdd.h
+//  NSNumber+Add.h
 //  SharenGo
 //  Notes：添加NSNumber处理的相关方法
 //

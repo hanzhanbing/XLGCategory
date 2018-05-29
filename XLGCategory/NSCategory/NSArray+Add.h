@@ -1,5 +1,5 @@
 //
-//  NSArray+XLGAdd.h
+//  NSArray+Add.h
 //  SharenGo
 //  Notes：添加数组处理的相关方法
 //

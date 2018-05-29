@@ -1,5 +1,5 @@
 //
-//  UITabBar+XLGAdd.h
+//  UITabBar+Add.h
 //  SharenGo
 //  Notes：UITabBar 小红点的设置方法
 //

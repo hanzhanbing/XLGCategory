@@ -1,5 +1,5 @@
 //
-//  UITabBar+XLGAdd.m
+//  UITabBar+Add.m
 //  SharenGo
 //  Notes：
 //
@@ -7,8 +7,8 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "UITabBar+XLGAdd.h"
-#import "UIView+XLGAdd.h"
+#import "UITabBar+Add.h"
+#import "UIView+Add.h"
 
 #define TabbarItemNums  5.0    //tabbar的数量 如果是5个设置为5
 

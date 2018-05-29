@@ -1,5 +1,5 @@
 //
-//  UIApplication+XLGAdd.h
+//  UIApplication+Add.h
 //  SharenGo
 //  Notes：获取设备的相关存储路径和一些app参数
 //

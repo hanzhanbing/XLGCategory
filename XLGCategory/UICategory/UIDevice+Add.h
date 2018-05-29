@@ -1,5 +1,5 @@
 //
-//  UIDevice+XLGAdd.h
+//  UIDevice+Add.h
 //  SharenGo
 //  Notes：获取设备信息
 //

@@ -1,5 +1,5 @@
 //
-//  UIImage+XLGAdd.m
+//  UIImage+Add.m
 //  SharenGo
 //  Notes：
 //
@@ -7,7 +7,7 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "UIImage+XLGAdd.h"
+#import "UIImage+Add.h"
 
 //由角度转换弧度
 #define kDegreesToRadian(x)      (M_PI * (x) / 180.0)

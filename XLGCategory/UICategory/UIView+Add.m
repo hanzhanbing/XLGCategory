@@ -1,5 +1,5 @@
 //
-//  UIView+XLGAdd.m
+//  UIView+Add.m
 //  SharenGo
 //  Notes：
 //
@@ -7,7 +7,7 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "UIView+XLGAdd.h"
+#import "UIView+Add.h"
 #import <objc/runtime.h>
 
 @implementation UIView (XLGAdd)

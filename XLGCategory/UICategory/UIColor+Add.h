@@ -1,5 +1,5 @@
 //
-//  UIColor+XLGAdd.h
+//  UIColor+Add.h
 //  SharenGo
 //  Notes：通过Hex获取颜色
 //

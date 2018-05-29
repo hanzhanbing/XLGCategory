@@ -1,5 +1,5 @@
 //
-//  UILabel+XLGAdd.h
+//  UILabel+Add.h
 //  SharenGo
 //  Notes：UILable 添加一些参数及方法
 //

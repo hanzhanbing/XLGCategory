@@ -1,5 +1,5 @@
 //
-//  NSDate+XLGAdd.m
+//  NSDate+Add.m
 //  SharenGo
 //  Notes：
 //
@@ -7,7 +7,7 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "NSDate+XLGAdd.h"
+#import "NSDate+Add.h"
 
 @implementation NSDate (XLGAdd)
 

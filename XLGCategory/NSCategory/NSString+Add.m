@@ -1,5 +1,5 @@
 //
-//  NSString+XLGAdd.m
+//  NSString+Add.m
 //  SharenGo
 //  Notes：
 //
@@ -7,7 +7,7 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "NSString+XLGAdd.h"
+#import "NSString+Add.h"
 #import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (XLGAdd)
@@ -41,7 +41,7 @@
     
     const char *cStr = [self UTF8String];
     unsigned char digest[CC_MD5_DIGEST_LENGTH];
-    CC_MD5( cStr, (CC_LONG)cStr, digest);
+    CC_MD5(cStr, strlen(cStr), digest);
     NSMutableString *result = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
     for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
         [result appendFormat:@"%02x", digest[i]];

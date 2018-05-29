@@ -1,5 +1,5 @@
 //
-//  UIColor+XLGAdd.m
+//  UIColor+Add.m
 //  SharenGo
 //  Notes：
 //
@@ -7,7 +7,7 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "UIColor+XLGAdd.h"
+#import "UIColor+Add.h"
 
 @implementation UIColor (XLGAdd)
 

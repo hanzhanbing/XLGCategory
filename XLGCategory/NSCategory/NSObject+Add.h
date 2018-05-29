@@ -1,5 +1,5 @@
 //
-//  NSObject+XLGAdd.h
+//  NSObject+Add.h
 //  SharenGo
 //  Notes：将所有的NSNull类型转化成@""
 //

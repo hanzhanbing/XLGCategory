@@ -1,5 +1,5 @@
 //
-//  UIDevice+XLGAdd.m
+//  UIDevice+Add.m
 //  SharenGo
 //  Notes：
 //
@@ -7,7 +7,7 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "UIDevice+XLGAdd.h"
+#import "UIDevice+Add.h"
 
 @implementation UIDevice (XLGAdd)
 

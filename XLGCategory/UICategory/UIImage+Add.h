@@ -1,5 +1,5 @@
 //
-//  UIImage+XLGAdd.h
+//  UIImage+Add.h
 //  SharenGo
 //  Notes：UIImage的一些图片处理方法
 //

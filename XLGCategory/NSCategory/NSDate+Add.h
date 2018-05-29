@@ -1,5 +1,5 @@
 //
-//  NSDate+XLGAdd.h
+//  NSDate+Add.h
 //  SharenGo
 //  Notes：添加年月日属性，以及获取日期字符串
 //

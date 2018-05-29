@@ -1,5 +1,5 @@
 //
-//  NSString+XLGAdd.h
+//  NSString+Add.h
 //  SharenGo
 //  Notes：添加字符串处理的相关方法
 //

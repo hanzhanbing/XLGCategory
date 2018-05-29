@@ -1,5 +1,5 @@
 //
-//  UIView+XLGAdd.h
+//  UIView+Add.h
 //  SharenGo
 //  Notes：对UIView一些属性和动画的拓展
 //

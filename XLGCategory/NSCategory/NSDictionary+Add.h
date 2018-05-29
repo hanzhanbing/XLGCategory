@@ -1,5 +1,5 @@
 //
-//  NSDictionary+XLGAdd.h
+//  NSDictionary+Add.h
 //  SharenGo
 //  Notes：添加字典处理的相关方法
 //
