@@ -1,5 +1,5 @@
 //
-//  NSTimer+EocBlockSupports.m
+//  NSTimer+XLGEocBlockSupports.m
 //  SharenGo
 //  Notes：
 //
@@ -7,9 +7,9 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "NSTimer+EocBlockSupports.h"
+#import "NSTimer+XLGEocBlockSupports.h"
 
-@implementation NSTimer (EocBlockSupports)
+@implementation NSTimer (XLGEocBlockSupports)
 
 + (NSTimer *)eocScheduledTimerWithTimeInterval:(NSTimeInterval)timeInterval
                                          block:(void(^)(void)) block

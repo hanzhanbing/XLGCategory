@@ -1,5 +1,5 @@
 //
-//  UIColor+Add.m
+//  UIColor+XLGExtension.m
 //  SharenGo
 //  Notes：
 //
@@ -7,9 +7,9 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "UIColor+Add.h"
+#import "UIColor+XLGExtension.h"
 
-@implementation UIColor (XLGAdd)
+@implementation UIColor (XLGExtension)
 
 /**
  通过Hex获取颜色

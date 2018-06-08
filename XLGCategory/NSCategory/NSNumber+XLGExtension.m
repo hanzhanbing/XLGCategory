@@ -1,5 +1,5 @@
 //
-//  NSNumber+Add.m
+//  NSNumber+XLGExtension.m
 //  SharenGo
 //  Notes：
 //
@@ -7,10 +7,10 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "NSNumber+Add.h"
-#import "NSString+Add.h"
+#import "NSNumber+XLGExtension.h"
+#import "NSString+XLGExtension.h"
 
-@implementation NSNumber (XLGAdd)
+@implementation NSNumber (XLGExtension)
 
 + (NSNumber *)numberWithString:(NSString *)string {
     NSString *str = [[string trimSpaceFromBothEnds] lowercaseString];

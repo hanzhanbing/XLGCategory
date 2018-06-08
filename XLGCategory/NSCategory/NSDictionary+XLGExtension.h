@@ -1,5 +1,5 @@
 //
-//  NSDictionary+Add.h
+//  NSDictionary+XLGExtension.h
 //  SharenGo
 //  Notes：添加字典处理的相关方法
 //
@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (XLGAdd)
+@interface NSDictionary (XLGExtension)
 
 #pragma mark - 字典转json字符串【一整行，NSString/NSNumber/NSDictionary/NSArray适用】
 - (nullable NSString *)jsonStringEncoded;

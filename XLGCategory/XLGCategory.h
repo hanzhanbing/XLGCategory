@@ -10,21 +10,21 @@
 #ifndef XLGCategory_h
 #define XLGCategory_h
 
-#import "NSObject+Add.h"
-#import "NSString+Add.h"
-#import "NSNumber+Add.h"
-#import "NSArray+Add.h"
-#import "NSDictionary+Add.h"
-#import "NSDate+Add.h"
-#import "NSTimer+EocBlockSupports.h"
+#import "NSObject+XLGExtension.h"
+#import "NSString+XLGExtension.h"
+#import "NSNumber+XLGExtension.h"
+#import "NSArray+XLGExtension.h"
+#import "NSDictionary+XLGExtension.h"
+#import "NSDate+XLGExtension.h"
+#import "NSTimer+XLGEocBlockSupports.h"
 
-#import "UIApplication+Add.h"
-#import "UIDevice+Add.h"
-#import "UIColor+Add.h"
-#import "UIImage+Add.h"
-#import "UIView+Add.h"
-#import "UILabel+Add.h"
-#import "UITabBar+Add.h"
-#import "UIAlertController+Blocks.h"
+#import "UIApplication+XLGExtension.h"
+#import "UIDevice+XLGExtension.h"
+#import "UIColor+XLGExtension.h"
+#import "UIImage+XLGExtension.h"
+#import "UIView+XLGExtension.h"
+#import "UILabel+XLGExtension.h"
+#import "UITabBar+XLGExtension.h"
+#import "UIAlertController+XLGBlocks.h"
 
 #endif /* XLGCategory_h */

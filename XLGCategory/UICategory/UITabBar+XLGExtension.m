@@ -1,5 +1,5 @@
 //
-//  UITabBar+Add.m
+//  UITabBar+XLGExtension.m
 //  SharenGo
 //  Notes：
 //
@@ -7,12 +7,12 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "UITabBar+Add.h"
-#import "UIView+Add.h"
+#import "UITabBar+XLGExtension.h"
+#import "UIView+XLGExtension.h"
 
 #define TabbarItemNums  5.0    //tabbar的数量 如果是5个设置为5
 
-@implementation UITabBar (XLGAdd)
+@implementation UITabBar (XLGExtension)
 
 //显示小红点附带数字
 - (void)showBadgeOnItemIndex:(NSInteger)index andCount:(NSString *)count{

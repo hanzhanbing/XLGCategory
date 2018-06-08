@@ -1,5 +1,5 @@
 //
-//  NSArray+Add.m
+//  NSArray+XLGExtension.m
 //  SharenGo
 //  Notes：
 //
@@ -7,9 +7,9 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "NSArray+Add.h"
+#import "NSArray+XLGExtension.h"
 
-@implementation NSArray (XLGAdd)
+@implementation NSArray (XLGExtension)
 
 /**
  输出json字符串【一整行】

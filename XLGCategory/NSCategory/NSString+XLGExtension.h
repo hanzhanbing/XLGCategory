@@ -1,5 +1,5 @@
 //
-//  NSString+Add.h
+//  NSString+XLGExtension.h
 //  SharenGo
 //  Notes：添加字符串处理的相关方法
 //
@@ -10,7 +10,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface NSString (XLGAdd)
+@interface NSString (XLGExtension)
 
 #pragma mark - url编码
 - (NSString *)urlEncoding;

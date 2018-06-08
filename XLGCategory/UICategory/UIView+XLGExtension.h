@@ -1,5 +1,5 @@
 //
-//  UIView+Add.h
+//  UIView+XLGExtension.h
 //  SharenGo
 //  Notes：对UIView一些属性和动画的拓展
 //
@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger , AShowAnimationStyle) {
 };
 
 IB_DESIGNABLE
-@interface UIView (XLGAdd)
+@interface UIView (XLGExtension)
 
 //扩展frame属性
 @property (nonatomic) CGFloat left;        ///< Shortcut for frame.origin.x.

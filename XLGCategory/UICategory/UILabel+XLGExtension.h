@@ -1,5 +1,5 @@
 //
-//  UILabel+Add.h
+//  UILabel+XLGExtension.h
 //  SharenGo
 //  Notes：UILable 添加一些参数及方法
 //
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UILabel (XLGAdd)
+@interface UILabel (XLGExtension)
 
 /**
  字间距

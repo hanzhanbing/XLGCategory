@@ -1,5 +1,5 @@
 //
-//  UITabBar+Add.h
+//  UITabBar+XLGExtension.h
 //  SharenGo
 //  Notes：UITabBar 小红点的设置方法
 //
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UITabBar (XLGAdd)
+@interface UITabBar (XLGExtension)
 
 /**
  显示小红点附带数字

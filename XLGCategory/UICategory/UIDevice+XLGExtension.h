@@ -1,5 +1,5 @@
 //
-//  UIDevice+Add.h
+//  UIDevice+XLGExtension.h
 //  SharenGo
 //  Notes：获取设备信息
 //
@@ -13,7 +13,7 @@
 #define kSystemVersion [UIDevice systemVersion]
 #endif
 
-@interface UIDevice (XLGAdd)
+@interface UIDevice (XLGExtension)
 
 #pragma mark - 获取系统版本
 + (double)systemVersion;

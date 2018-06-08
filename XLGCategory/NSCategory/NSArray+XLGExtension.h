@@ -1,5 +1,5 @@
 //
-//  NSArray+Add.h
+//  NSArray+XLGExtension.h
 //  SharenGo
 //  Notes：添加数组处理的相关方法
 //
@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (XLGAdd)
+@interface NSArray (XLGExtension)
 
 #pragma mark - 数组转json字符串【一整行，NSString/NSNumber/NSDictionary/NSArray适用】
 - (nullable NSString *)jsonStringEncoded;

@@ -1,5 +1,5 @@
 //
-//  UIImage+Add.h
+//  UIImage+XLGExtension.h
 //  SharenGo
 //  Notes：UIImage的一些图片处理方法
 //
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (XLGAdd)
+@interface UIImage (XLGExtension)
 
 #pragma mark - 颜色转换成图片
 + (UIImage *)imageWithColor:(UIColor *)color;

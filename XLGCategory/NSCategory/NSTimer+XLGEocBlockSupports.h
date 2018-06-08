@@ -1,5 +1,5 @@
 //
-//  NSTimer+EocBlockSupports.h
+//  NSTimer+XLGEocBlockSupports.h
 //  SharenGo
 //  Notes：NSTimer 封装
 //
@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSTimer (EocBlockSupports)
+@interface NSTimer (XLGEocBlockSupports)
 
 /**
  NSTimer封装，添加block回调

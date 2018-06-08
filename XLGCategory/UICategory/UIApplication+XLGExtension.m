@@ -1,5 +1,5 @@
 //
-//  UIApplication+Add.m
+//  UIApplication+XLGExtension.m
 //  SharenGo
 //  Notes：
 //
@@ -7,9 +7,9 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "UIApplication+Add.h"
+#import "UIApplication+XLGExtension.h"
 
-@implementation UIApplication (XLGAdd)
+@implementation UIApplication (XLGExtension)
 
 - (NSURL *)documentsURL {
     return [[[NSFileManager defaultManager]

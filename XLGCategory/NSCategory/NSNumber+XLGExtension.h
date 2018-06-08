@@ -1,5 +1,5 @@
 //
-//  NSNumber+Add.h
+//  NSNumber+XLGExtension.h
 //  SharenGo
 //  Notes：添加NSNumber处理的相关方法
 //
@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSNumber (XLGAdd)
+@interface NSNumber (XLGExtension)
 
 /**
  Creates and returns an NSNumber object from a string.

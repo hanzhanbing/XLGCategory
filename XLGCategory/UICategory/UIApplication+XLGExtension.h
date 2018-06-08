@@ -1,5 +1,5 @@
 //
-//  UIApplication+Add.h
+//  UIApplication+XLGExtension.h
 //  SharenGo
 //  Notes：获取设备的相关存储路径和一些app参数
 //
@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIApplication (XLGAdd)
+@interface UIApplication (XLGExtension)
 
 #pragma mark - 获取Documents存储路径
 @property (nonatomic, readonly) NSURL *documentsURL;

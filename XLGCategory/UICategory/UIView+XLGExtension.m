@@ -1,5 +1,5 @@
 //
-//  UIView+Add.m
+//  UIView+XLGExtension.m
 //  SharenGo
 //  Notes：
 //
@@ -7,10 +7,10 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "UIView+Add.h"
+#import "UIView+XLGExtension.h"
 #import <objc/runtime.h>
 
-@implementation UIView (XLGAdd)
+@implementation UIView (XLGExtension)
 
 #pragma mark - 扩展frame属性
 

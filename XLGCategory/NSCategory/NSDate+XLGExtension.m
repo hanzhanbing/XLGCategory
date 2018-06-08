@@ -1,5 +1,5 @@
 //
-//  NSDate+Add.m
+//  NSDate+XLGExtension.m
 //  SharenGo
 //  Notes：
 //
@@ -7,9 +7,9 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "NSDate+Add.h"
+#import "NSDate+XLGExtension.h"
 
-@implementation NSDate (XLGAdd)
+@implementation NSDate (XLGExtension)
 
 - (NSInteger)year {
     return [[[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:self] year];

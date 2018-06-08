@@ -1,5 +1,5 @@
 //
-//  UILabel+Add.m
+//  UILabel+XLGExtension.m
 //  SharenGo
 //  Notes：
 //
@@ -7,11 +7,11 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "UILabel+Add.h"
+#import "UILabel+XLGExtension.h"
 #import <objc/runtime.h>
 #import <CoreText/CoreText.h>
 
-@implementation UILabel (XLGAdd)
+@implementation UILabel (XLGExtension)
 
 -(CGFloat)characterSpace{
     return [objc_getAssociatedObject(self,_cmd) floatValue];

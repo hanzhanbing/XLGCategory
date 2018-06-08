@@ -1,5 +1,5 @@
 //
-//  UIImage+Add.m
+//  UIImage+XLGExtension.m
 //  SharenGo
 //  Notes：
 //
@@ -7,14 +7,14 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "UIImage+Add.h"
+#import "UIImage+XLGExtension.h"
 
 //由角度转换弧度
 #define kDegreesToRadian(x)      (M_PI * (x) / 180.0)
 //由弧度转换角度
 #define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
 
-@implementation UIImage (XLGAdd)
+@implementation UIImage (XLGExtension)
 
 //颜色转换成图片
 + (UIImage *)imageWithColor:(UIColor *)color

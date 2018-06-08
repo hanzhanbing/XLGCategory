@@ -1,5 +1,5 @@
 //
-//  NSDate+Add.h
+//  NSDate+XLGExtension.h
 //  SharenGo
 //  Notes：添加年月日属性，以及获取日期字符串
 //
@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDate (XLGAdd)
+@interface NSDate (XLGExtension)
 
 @property (nonatomic, readonly) NSInteger year; ///< Year component
 @property (nonatomic, readonly) NSInteger month; ///< Month component (1~12)
