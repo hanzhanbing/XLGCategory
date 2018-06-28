@@ -12,11 +12,17 @@
 
 @interface NSString (XLGExtension)
 
+#pragma mark - 判断字符串是否为空
+- (BOOL)isEmpty;
+
 #pragma mark - url编码
 - (NSString *)urlEncoding;
 
 #pragma mark - url解码
 - (NSString *)urlDecoding;
+
+#pragma mark - md5
+- (NSString *)md5;
 
 #pragma mark - md5To32bit
 - (NSString *)md5To32bit;
@@ -29,5 +35,11 @@
 
 #pragma mark - 根据字体大小、行宽获取文本高度
 - (CGFloat)getTextHeightWithFont:(UIFont *)font width:(CGFloat)width;
+
+#pragma mark - 通过CGSize范围和字体重新计算CGSize
+- (CGSize)getSize:(CGSize)containSize font:(UIFont *)font;
+
+#pragma mark - 时间转时间戳
++ (NSString*)timeToTimestamp:(NSString*)time;
 
 @end

@@ -14,6 +14,26 @@
 
 #pragma mark - 扩展frame属性
 
+- (CGFloat)x {
+    return self.frame.origin.x;
+}
+
+- (void)setX:(CGFloat)x {
+    CGRect frame = self.frame;
+    frame.origin.x = x;
+    self.frame = frame;
+}
+
+- (CGFloat)y {
+    return self.frame.origin.y;
+}
+
+- (void)setY:(CGFloat)y {
+    CGRect frame = self.frame;
+    frame.origin.y = y;
+    self.frame = frame;
+}
+
 - (CGFloat)left {
     return self.frame.origin.x;
 }
@@ -260,6 +280,96 @@
         layer.backgroundColor = color.CGColor;
         [view.layer addSublayer:layer];
     }
+}
+
+//画倾斜渐变视图
+- (void)drawLinearGradient:(CGContextRef)context
+                      path:(CGPathRef)path
+                startColor:(CGColorRef)startColor
+                  endColor:(CGColorRef)endColor
+{
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGFloat locations[] = { 0.0, 1.0 };
+    
+    NSArray *colors = @[(__bridge id) startColor, (__bridge id) endColor];
+    
+    CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef) colors, locations);
+    
+    
+    CGRect pathRect = CGPathGetBoundingBox(path);
+    
+    //具体方向可根据需求修改
+    CGPoint startPoint = CGPointMake(CGRectGetMidX(pathRect), CGRectGetMinY(pathRect));
+    CGPoint endPoint = CGPointMake(CGRectGetMidX(pathRect), CGRectGetMaxY(pathRect));
+    
+    CGContextSaveGState(context);
+    CGContextAddPath(context, path);
+    CGContextClip(context);
+    CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, 0);
+    CGContextRestoreGState(context);
+    
+    CGGradientRelease(gradient);
+    CGColorSpaceRelease(colorSpace);
+}
+
+/**
+ 设置View阴影样式
+ 
+ @param shadowColor 阴影颜色
+ @param shadowOpacity 阴影透明度
+ @param shadowBlur 阴影模糊度
+ @param shadowOffset 阴影偏移量
+ */
+- (void)setViewShadowColor:(UIColor *)shadowColor
+             shadowOpacity:(CGFloat)shadowOpacity
+                shadowBlur:(CGFloat)shadowBlur
+              shadowOffset:(CGSize)shadowOffset {
+    
+    self.layer.shadowColor = shadowColor.CGColor; //阴影颜色
+    self.layer.shadowOpacity = shadowOpacity; //阴影透明度
+    self.layer.shadowRadius = shadowBlur; //阴影模糊度
+    self.layer.shadowOffset = shadowOffset; //阴影偏移量
+    self.layer.shadowPath = [[UIBezierPath bezierPathWithRect:self.bounds] CGPath];
+    [self.layer setMasksToBounds:NO];
+}
+
+
+/**
+ 水平view数组布局
+
+ @param views view数组
+ */
+- (void)distributeSpacingHorizontallyWith:(NSArray*)views {
+    
+    NSMutableArray *spaces = [NSMutableArray arrayWithCapacity:views.count+1];
+    
+    for ( int i = 0 ; i < views.count+1 ; ++i ) {
+        UIView *view = [UIView new];
+        [spaces addObject:view];
+        [self addSubview:view];
+        
+        view.width = view.height;
+    }
+    
+    UIView *v0 = spaces[0];
+    v0.left = self.left;
+    v0.centerY = ((UIView*)views[0]).centerY;
+    
+    UIView *lastSpace = v0;
+    for (int i = 0 ; i < views.count; ++i ) {
+        UIView *obj = views[i];
+        UIView *space = spaces[i+1];
+        
+        obj.left = lastSpace.right;
+        
+        space.left = obj.right;
+        space.centerY = obj.centerY;
+        space.width = v0.width;
+        
+        lastSpace = space;
+    }
+    
+    lastSpace.right = self.right;
 }
 
 @end

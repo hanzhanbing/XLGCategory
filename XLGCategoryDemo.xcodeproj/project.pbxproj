@@ -28,6 +28,9 @@
 		961CFE9E20A9CDD4005737AC /* UILabel+XLGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE8C20A9CDD4005737AC /* UILabel+XLGExtension.m */; };
 		961CFE9F20A9CDD4005737AC /* UIImage+XLGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE8D20A9CDD4005737AC /* UIImage+XLGExtension.m */; };
 		961CFEA020A9CDD4005737AC /* UIApplication+XLGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE8F20A9CDD4005737AC /* UIApplication+XLGExtension.m */; };
+		A0862B4A20DCE71D001E1AAF /* NSData+XLGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0862B4920DCE71D001E1AAF /* NSData+XLGExtension.m */; };
+		A0AE787F20E4669400F971D8 /* UIBarButtonItem+XLGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE787E20E4669400F971D8 /* UIBarButtonItem+XLGExtension.m */; };
+		A0AE788220E4678000F971D8 /* UIButton+XLGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE788120E4678000F971D8 /* UIButton+XLGExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +75,12 @@
 		961CFE8F20A9CDD4005737AC /* UIApplication+XLGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+XLGExtension.m"; sourceTree = "<group>"; };
 		961CFE9020A9CDD4005737AC /* UITabBar+XLGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+XLGExtension.h"; sourceTree = "<group>"; };
 		961CFE9120A9CDD4005737AC /* UIView+XLGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XLGExtension.h"; sourceTree = "<group>"; };
+		A0862B4820DCE71D001E1AAF /* NSData+XLGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+XLGExtension.h"; sourceTree = "<group>"; };
+		A0862B4920DCE71D001E1AAF /* NSData+XLGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+XLGExtension.m"; sourceTree = "<group>"; };
+		A0AE787D20E4669400F971D8 /* UIBarButtonItem+XLGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XLGExtension.h"; sourceTree = "<group>"; };
+		A0AE787E20E4669400F971D8 /* UIBarButtonItem+XLGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XLGExtension.m"; sourceTree = "<group>"; };
+		A0AE788020E4678000F971D8 /* UIButton+XLGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+XLGExtension.h"; sourceTree = "<group>"; };
+		A0AE788120E4678000F971D8 /* UIButton+XLGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XLGExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +146,8 @@
 				961CFE7C20A9CDD4005737AC /* NSDictionary+XLGExtension.m */,
 				961CFE7320A9CDD4005737AC /* NSDate+XLGExtension.h */,
 				961CFE7B20A9CDD4005737AC /* NSDate+XLGExtension.m */,
+				A0862B4820DCE71D001E1AAF /* NSData+XLGExtension.h */,
+				A0862B4920DCE71D001E1AAF /* NSData+XLGExtension.m */,
 				961CFE7520A9CDD4005737AC /* NSTimer+XLGEocBlockSupports.h */,
 				961CFE7E20A9CDD4005737AC /* NSTimer+XLGEocBlockSupports.m */,
 			);
@@ -154,8 +165,12 @@
 				961CFE8C20A9CDD4005737AC /* UILabel+XLGExtension.m */,
 				961CFE8520A9CDD4005737AC /* UIImage+XLGExtension.h */,
 				961CFE8D20A9CDD4005737AC /* UIImage+XLGExtension.m */,
+				A0AE788020E4678000F971D8 /* UIButton+XLGExtension.h */,
+				A0AE788120E4678000F971D8 /* UIButton+XLGExtension.m */,
 				961CFE9020A9CDD4005737AC /* UITabBar+XLGExtension.h */,
 				961CFE8820A9CDD4005737AC /* UITabBar+XLGExtension.m */,
+				A0AE787D20E4669400F971D8 /* UIBarButtonItem+XLGExtension.h */,
+				A0AE787E20E4669400F971D8 /* UIBarButtonItem+XLGExtension.m */,
 				961CFE8E20A9CDD4005737AC /* UIDevice+XLGExtension.h */,
 				961CFE8420A9CDD4005737AC /* UIDevice+XLGExtension.m */,
 				961CFE8920A9CDD4005737AC /* UIApplication+XLGExtension.h */,
@@ -276,10 +291,13 @@
 				961CFE5C20A9CD8B005737AC /* AppDelegate.m in Sources */,
 				961CFE9C20A9CDD4005737AC /* UIView+XLGExtension.m in Sources */,
 				961CFE9820A9CDD4005737AC /* NSNumber+XLGExtension.m in Sources */,
+				A0AE788220E4678000F971D8 /* UIButton+XLGExtension.m in Sources */,
 				961CFE9E20A9CDD4005737AC /* UILabel+XLGExtension.m in Sources */,
 				961CFE9B20A9CDD4005737AC /* UIDevice+XLGExtension.m in Sources */,
 				961CFE9220A9CDD4005737AC /* NSObject+XLGExtension.m in Sources */,
+				A0862B4A20DCE71D001E1AAF /* NSData+XLGExtension.m in Sources */,
 				961CFE9F20A9CDD4005737AC /* UIImage+XLGExtension.m in Sources */,
+				A0AE787F20E4669400F971D8 /* UIBarButtonItem+XLGExtension.m in Sources */,
 				961CFE9A20A9CDD4005737AC /* UIAlertController+XLGBlocks.m in Sources */,
 				961CFE9520A9CDD4005737AC /* NSDate+XLGExtension.m in Sources */,
 				961CFE9620A9CDD4005737AC /* NSDictionary+XLGExtension.m in Sources */,

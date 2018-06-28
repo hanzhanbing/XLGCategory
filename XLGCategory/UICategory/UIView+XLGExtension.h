@@ -25,6 +25,8 @@ IB_DESIGNABLE
 @interface UIView (XLGExtension)
 
 //扩展frame属性
+@property (nonatomic) CGFloat x;           ///< Shortcut for frame.origin.x.
+@property (nonatomic) CGFloat y;           ///< Shortcut for frame.origin.y
 @property (nonatomic) CGFloat left;        ///< Shortcut for frame.origin.x.
 @property (nonatomic) CGFloat top;         ///< Shortcut for frame.origin.y
 @property (nonatomic) CGFloat right;       ///< Shortcut for frame.origin.x + frame.size.width
@@ -47,8 +49,7 @@ IB_DESIGNABLE
 @property (nullable, nonatomic, readonly) UIViewController *viewController;
 
 /**
- 
- @return 显示在主窗口
+ 是否显示在主窗口
  */
 - (BOOL)isShowingOnKeyWindow;
 
@@ -63,5 +64,26 @@ IB_DESIGNABLE
  单独显示某一侧的边框线
  */
 - (void)setBorderWithView:(UIView *)view top:(BOOL)top left:(BOOL)left bottom:(BOOL)bottom right:(BOOL)right borderColor:(UIColor *)color borderWidth:(CGFloat)width;
+
+/**
+ 画倾斜渐变视图
+ */
+- (void)drawLinearGradient:(CGContextRef)context
+                      path:(CGPathRef)path
+                startColor:(CGColorRef)startColor
+                  endColor:(CGColorRef)endColor;
+
+/**
+ 设置控件阴影样式
+ */
+- (void)setViewShadowColor:(UIColor *)shadowColor
+             shadowOpacity:(CGFloat)shadowOpacity
+                shadowBlur:(CGFloat)shadowBlur
+              shadowOffset:(CGSize)shadowOffset;
+
+/**
+ 水平view数组布局
+ */
+- (void)distributeSpacingHorizontallyWith:(NSArray*)views;
 
 @end

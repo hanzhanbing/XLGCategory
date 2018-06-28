@@ -16,6 +16,15 @@
 
 @implementation UIImage (XLGExtension)
 
+//视图快照
++ (UIImage *)snapshotSingleView:(UIView *)view {
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, YES, 0);
+    [view drawViewHierarchyInRect:view.bounds afterScreenUpdates:YES];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 //颜色转换成图片
 + (UIImage *)imageWithColor:(UIColor *)color
 {
@@ -296,6 +305,17 @@ static CGRect swapWidthAndHeight(CGRect rect)
     return newImage;
 }
 
+//UIImage缩放到固定的Frame，新图片通过返回值返回
+- (UIImage *)imageScaledToRect:(CGRect)newRect
+{
+    struct CGImage *cgImage = CGImageCreateWithImageInRect([self CGImage], newRect);
+    UIImage *newImage = [UIImage imageWithCGImage:cgImage];
+    
+    // 要释放，否则会保留original image
+    CGImageRelease(cgImage);
+    return newImage;
+}
+
 //UIImage尺寸不足添黑边处理
 - (UIImage *)imageBlackBackGroundToSize:(CGSize)newSize
 {
@@ -323,16 +343,6 @@ static CGRect swapWidthAndHeight(CGRect rect)
     }
 }
 
-- (UIImage *)imageInterceptToRect:(CGRect)newRect
-{
-    struct CGImage *cgImage = CGImageCreateWithImageInRect([self CGImage], newRect);
-    UIImage *newImage = [UIImage imageWithCGImage:cgImage];
-    
-    // 要释放，否则会保留original image
-    CGImageRelease(cgImage);
-    return newImage;
-}
-
 //UIImage按比例将宽度高度差异小的一方缩放到指定的大小，然后截取另一方，使其跟newSize一样大
 - (UIImage *)imageScaledInterceptToSize:(CGSize)newSize withNeed2x:(BOOL)need2x
 {
@@ -346,13 +356,13 @@ static CGRect swapWidthAndHeight(CGRect rect)
         CGSize scaledSize = CGSizeMake(self.size.width/heightMultiple, newSize.height);
         UIImage *scaledImage = [self imageScaledToSize:scaledSize];
         
-        UIImage *newImage = [scaledImage imageInterceptToRect:CGRectMake((scaledSize.width-newSize.width)/2, 0, newSize.width, newSize.height)];
+        UIImage *newImage = [scaledImage imageScaledToRect:CGRectMake((scaledSize.width-newSize.width)/2, 0, newSize.width, newSize.height)];
         return newImage;
     } else {
         CGSize scaledSize = CGSizeMake(newSize.width, self.size.height/widthMultiple);
         UIImage *scaledImage = [self imageScaledToSize:scaledSize];
         
-        UIImage *newImage = [scaledImage imageInterceptToRect:CGRectMake(0, (scaledSize.height-newSize.height)/2, newSize.width, newSize.height)];
+        UIImage *newImage = [scaledImage imageScaledToRect:CGRectMake(0, (scaledSize.height-newSize.height)/2, newSize.width, newSize.height)];
         return newImage;
     }
 }
@@ -374,31 +384,31 @@ static CGRect swapWidthAndHeight(CGRect rect)
     
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    newImage = [newImage imageInterceptToRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    newImage = [newImage imageScaledToRect:CGRectMake(0, 0, newSize.width, newSize.height)];
     return newImage;
 }
 
 //UIImage左右两点拉伸
 - (UIImage *)imageStretchToSize:(CGSize)newSize withX1:(float)x1 withX2:(float)x2 y:(float)y
 {
-    UIImage *leftImage = [self imageInterceptToRect:CGRectMake(0, 0, x1*2, self.size.height*2)];
+    UIImage *leftImage = [self imageScaledToRect:CGRectMake(0, 0, x1*2, self.size.height*2)];
     
     NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"leftImage"];
     [UIImageJPEGRepresentation(leftImage, 1) writeToFile:path atomically:YES];
     
-    UIImage *leftStrechImage = [self imageInterceptToRect:CGRectMake(x1*2-1, 0, 1, self.size.height*2)];
+    UIImage *leftStrechImage = [self imageScaledToRect:CGRectMake(x1*2-1, 0, 1, self.size.height*2)];
     path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"leftStrechImage"];
     [UIImageJPEGRepresentation(leftStrechImage, 1) writeToFile:path atomically:YES];
     
-    UIImage *centerImage = [self imageInterceptToRect:CGRectMake(x1*2, 0, x2*2-x1*2, self.size.height*2)];
+    UIImage *centerImage = [self imageScaledToRect:CGRectMake(x1*2, 0, x2*2-x1*2, self.size.height*2)];
     path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"centerImage"];
     [UIImageJPEGRepresentation(centerImage, 1) writeToFile:path atomically:YES];
     
-    UIImage *rightImage = [self imageInterceptToRect:CGRectMake(x2*2, 0, self.size.width*2-x2*2, self.size.height*2)];
+    UIImage *rightImage = [self imageScaledToRect:CGRectMake(x2*2, 0, self.size.width*2-x2*2, self.size.height*2)];
     path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"rightImage"];
     [UIImageJPEGRepresentation(rightImage, 1) writeToFile:path atomically:YES];
     
-    UIImage *rightStrechImage = [self imageInterceptToRect:CGRectMake(x2*2, 0, 2, self.size.height*2)];
+    UIImage *rightStrechImage = [self imageScaledToRect:CGRectMake(x2*2, 0, 2, self.size.height*2)];
     path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"rightStrechImage"];
     [UIImageJPEGRepresentation(rightStrechImage, 1) writeToFile:path atomically:YES];
     

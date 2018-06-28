@@ -16,15 +16,18 @@
 #import "NSArray+XLGExtension.h"
 #import "NSDictionary+XLGExtension.h"
 #import "NSDate+XLGExtension.h"
+#import "NSData+XLGExtension.h"
 #import "NSTimer+XLGEocBlockSupports.h"
 
 #import "UIApplication+XLGExtension.h"
 #import "UIDevice+XLGExtension.h"
 #import "UIColor+XLGExtension.h"
 #import "UIImage+XLGExtension.h"
+#import "UIButton+XLGExtension.h"
 #import "UIView+XLGExtension.h"
 #import "UILabel+XLGExtension.h"
 #import "UITabBar+XLGExtension.h"
+#import "UIBarButtonItem+XLGExtension.h"
 #import "UIAlertController+XLGBlocks.h"
 
 #endif /* XLGCategory_h */
