@@ -28,6 +28,6 @@
 #import "UILabel+XLGExtension.h"
 #import "UITabBar+XLGExtension.h"
 #import "UIBarButtonItem+XLGExtension.h"
-#import "UIAlertController+XLGBlocks.h"
+#import "UIAlertController+XLGExtension.h"
 
 #endif /* XLGCategory_h */

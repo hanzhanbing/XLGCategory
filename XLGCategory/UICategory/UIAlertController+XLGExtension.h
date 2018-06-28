@@ -1,5 +1,5 @@
 //
-//  UIAlertController+XLGBlocks.h
+//  UIAlertController+XLGExtension.h
 //  SharenGo
 //  Notes：UIAlertController封装
 //
@@ -14,7 +14,20 @@ typedef void (^UIAlertControllerPopoverPresentationControllerBlock) (UIPopoverPr
 #endif
 typedef void (^UIAlertControllerCompletionBlock) (UIAlertController * __nonnull controller, UIAlertAction * __nonnull action, NSInteger buttonIndex);
 
-@interface UIAlertController (XLGBlocks)
+@interface UIAlertController (XLGExtension)
+
+@property (readonly, nonatomic) BOOL visible;
+@property (readonly, nonatomic) NSInteger cancelButtonIndex;
+@property (readonly, nonatomic) NSInteger firstOtherButtonIndex;
+@property (readonly, nonatomic) NSInteger destructiveButtonIndex;
+
++ (UIAlertController * _Nonnull)alertWithTitle:(NSString * _Nullable)alertTitle
+                                       message:(NSString * _Nullable)message
+                                 okActionTitle:(NSString * _Nullable)okActionTitle
+                                 okActionStyle:(UIAlertActionStyle)okActionStyle
+                               okActionHandler:(void(^ _Nullable)(UIAlertAction * _Nonnull action))okActionHandler cancelActionTitle:(NSString * _Nullable)cancelActionTitle
+                             cancelActionStyle:(UIAlertActionStyle)cancelActionStyle
+                           cancelActionHandler:(void(^_Nullable)(UIAlertAction * _Nonnull action))cancelActionHandler;
 
 + (nonnull instancetype)showInViewController:(nonnull UIViewController *)viewController
                                    withTitle:(nullable NSString *)title
@@ -47,11 +60,5 @@ typedef void (^UIAlertControllerCompletionBlock) (UIAlertController * __nonnull 
                      popoverPresentationControllerBlock:(nullable UIAlertControllerPopoverPresentationControllerBlock)popoverPresentationControllerBlock
 #endif
                                                tapBlock:(nullable UIAlertControllerCompletionBlock)tapBlock;
-
-
-@property (readonly, nonatomic) BOOL visible;
-@property (readonly, nonatomic) NSInteger cancelButtonIndex;
-@property (readonly, nonatomic) NSInteger firstOtherButtonIndex;
-@property (readonly, nonatomic) NSInteger destructiveButtonIndex;
 
 @end

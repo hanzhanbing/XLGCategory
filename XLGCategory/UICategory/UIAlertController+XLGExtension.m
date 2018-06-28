@@ -1,5 +1,5 @@
 //
-//  UIAlertController+XLGBlocks.m
+//  UIAlertController+XLGExtension.m
 //  SharenGo
 //  Notes：
 //
@@ -7,7 +7,7 @@
 //  Copyright © 2018年 小灵狗出行. All rights reserved.
 //
 
-#import "UIAlertController+XLGBlocks.h"
+#import "UIAlertController+XLGExtension.h"
 
 static NSInteger const UIAlertControllerBlocksCancelButtonIndex = 0;
 static NSInteger const UIAlertControllerBlocksDestructiveButtonIndex = 1;
@@ -19,7 +19,29 @@ static NSInteger const UIAlertControllerBlocksFirstOtherButtonIndex = 2;
 
 @end
 
-@implementation UIAlertController (XLGBlocks)
+@implementation UIAlertController (XLGExtension)
+
++ (UIAlertController * _Nonnull)alertWithTitle:(NSString * _Nullable)alertTitle
+                                       message:(NSString * _Nullable)message
+                                 okActionTitle:(NSString * _Nullable)okActionTitle
+                                 okActionStyle:(UIAlertActionStyle)okActionStyle
+                               okActionHandler:(void(^ _Nullable)(UIAlertAction * _Nonnull action))okActionHandler cancelActionTitle:(NSString * _Nullable)cancelActionTitle
+                             cancelActionStyle:(UIAlertActionStyle)cancelActionStyle
+                           cancelActionHandler:(void(^_Nullable)(UIAlertAction * _Nonnull action))cancelActionHandler {
+    
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:alertTitle message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    if (okActionTitle) {
+        UIAlertAction * okAction = [UIAlertAction actionWithTitle:okActionTitle style:okActionStyle handler:okActionHandler];
+        [alert addAction:okAction];
+    }
+    
+    if (cancelActionTitle) {
+        UIAlertAction * cancelAction = [UIAlertAction actionWithTitle:cancelActionTitle style:cancelActionStyle handler:cancelActionHandler];
+        [alert addAction:cancelAction];
+    }
+    return alert;
+}
 
 + (instancetype)showInViewController:(UIViewController *)viewController
                            withTitle:(NSString *)title

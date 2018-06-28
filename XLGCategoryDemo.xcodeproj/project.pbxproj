@@ -21,7 +21,7 @@
 		961CFE9720A9CDD4005737AC /* NSTimer+XLGEocBlockSupports.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE7E20A9CDD4005737AC /* NSTimer+XLGEocBlockSupports.m */; };
 		961CFE9820A9CDD4005737AC /* NSNumber+XLGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE7F20A9CDD4005737AC /* NSNumber+XLGExtension.m */; };
 		961CFE9920A9CDD4005737AC /* UIColor+XLGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE8220A9CDD4005737AC /* UIColor+XLGExtension.m */; };
-		961CFE9A20A9CDD4005737AC /* UIAlertController+XLGBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE8320A9CDD4005737AC /* UIAlertController+XLGBlocks.m */; };
+		961CFE9A20A9CDD4005737AC /* UIAlertController+XLGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE8320A9CDD4005737AC /* UIAlertController+XLGExtension.m */; };
 		961CFE9B20A9CDD4005737AC /* UIDevice+XLGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE8420A9CDD4005737AC /* UIDevice+XLGExtension.m */; };
 		961CFE9C20A9CDD4005737AC /* UIView+XLGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE8720A9CDD4005737AC /* UIView+XLGExtension.m */; };
 		961CFE9D20A9CDD4005737AC /* UITabBar+XLGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 961CFE8820A9CDD4005737AC /* UITabBar+XLGExtension.m */; };
@@ -60,14 +60,14 @@
 		961CFE7F20A9CDD4005737AC /* NSNumber+XLGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+XLGExtension.m"; sourceTree = "<group>"; };
 		961CFE8020A9CDD4005737AC /* XLGCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLGCategory.h; sourceTree = "<group>"; };
 		961CFE8220A9CDD4005737AC /* UIColor+XLGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XLGExtension.m"; sourceTree = "<group>"; };
-		961CFE8320A9CDD4005737AC /* UIAlertController+XLGBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+XLGBlocks.m"; sourceTree = "<group>"; };
+		961CFE8320A9CDD4005737AC /* UIAlertController+XLGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+XLGExtension.m"; sourceTree = "<group>"; };
 		961CFE8420A9CDD4005737AC /* UIDevice+XLGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+XLGExtension.m"; sourceTree = "<group>"; };
 		961CFE8520A9CDD4005737AC /* UIImage+XLGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XLGExtension.h"; sourceTree = "<group>"; };
 		961CFE8620A9CDD4005737AC /* UILabel+XLGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+XLGExtension.h"; sourceTree = "<group>"; };
 		961CFE8720A9CDD4005737AC /* UIView+XLGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XLGExtension.m"; sourceTree = "<group>"; };
 		961CFE8820A9CDD4005737AC /* UITabBar+XLGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+XLGExtension.m"; sourceTree = "<group>"; };
 		961CFE8920A9CDD4005737AC /* UIApplication+XLGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+XLGExtension.h"; sourceTree = "<group>"; };
-		961CFE8A20A9CDD4005737AC /* UIAlertController+XLGBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+XLGBlocks.h"; sourceTree = "<group>"; };
+		961CFE8A20A9CDD4005737AC /* UIAlertController+XLGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+XLGExtension.h"; sourceTree = "<group>"; };
 		961CFE8B20A9CDD4005737AC /* UIColor+XLGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XLGExtension.h"; sourceTree = "<group>"; };
 		961CFE8C20A9CDD4005737AC /* UILabel+XLGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+XLGExtension.m"; sourceTree = "<group>"; };
 		961CFE8D20A9CDD4005737AC /* UIImage+XLGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XLGExtension.m"; sourceTree = "<group>"; };
@@ -175,8 +175,8 @@
 				961CFE8420A9CDD4005737AC /* UIDevice+XLGExtension.m */,
 				961CFE8920A9CDD4005737AC /* UIApplication+XLGExtension.h */,
 				961CFE8F20A9CDD4005737AC /* UIApplication+XLGExtension.m */,
-				961CFE8A20A9CDD4005737AC /* UIAlertController+XLGBlocks.h */,
-				961CFE8320A9CDD4005737AC /* UIAlertController+XLGBlocks.m */,
+				961CFE8A20A9CDD4005737AC /* UIAlertController+XLGExtension.h */,
+				961CFE8320A9CDD4005737AC /* UIAlertController+XLGExtension.m */,
 			);
 			path = UICategory;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 				A0862B4A20DCE71D001E1AAF /* NSData+XLGExtension.m in Sources */,
 				961CFE9F20A9CDD4005737AC /* UIImage+XLGExtension.m in Sources */,
 				A0AE787F20E4669400F971D8 /* UIBarButtonItem+XLGExtension.m in Sources */,
-				961CFE9A20A9CDD4005737AC /* UIAlertController+XLGBlocks.m in Sources */,
+				961CFE9A20A9CDD4005737AC /* UIAlertController+XLGExtension.m in Sources */,
 				961CFE9520A9CDD4005737AC /* NSDate+XLGExtension.m in Sources */,
 				961CFE9620A9CDD4005737AC /* NSDictionary+XLGExtension.m in Sources */,
 				961CFE9D20A9CDD4005737AC /* UITabBar+XLGExtension.m in Sources */,
