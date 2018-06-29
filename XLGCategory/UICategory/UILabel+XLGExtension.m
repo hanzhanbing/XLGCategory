@@ -130,4 +130,12 @@
     return expectSize;
 }
 
++ (CGFloat)getWidthWithTitle:(NSString *)title andFont:(CGFloat)font {
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 1000, 0)];
+    label.text = title;
+    label.font = [UIFont systemFontOfSize:font];
+    [label sizeToFit];
+    return label.frame.size.width + 10;
+}
+
 @end

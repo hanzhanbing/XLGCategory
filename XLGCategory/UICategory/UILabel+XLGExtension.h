@@ -42,4 +42,14 @@
  */
 - (CGSize)getLableRectWithMaxWidth:(CGFloat)maxWidth;
 
+
+/**
+ 获取文字宽度
+
+ @param title 文字
+ @param font 字体
+ @return 宽度
+ */
++ (CGFloat)getWidthWithTitle:(NSString *)title andFont:(CGFloat)font;
+
 @end
