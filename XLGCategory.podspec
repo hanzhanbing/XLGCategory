@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'XLGCategory'
-  s.version      = '1.0.8'
+  s.version      = '1.0.9'
   s.ios.deployment_target = '7.0'
   s.license  =  { :type => 'MIT', :file => 'LICENSE' }
   s.summary      = 'An example of XLGCategory Function'
