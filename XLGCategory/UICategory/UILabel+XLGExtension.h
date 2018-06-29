@@ -44,6 +44,16 @@
 
 
 /**
+ 获取文字高度
+
+ @param width 宽度
+ @param title 文字
+ @param font 字体
+ @return 高度
+ */
++ (CGFloat)getHeightByWidth:(CGFloat)width title:(NSString *)title font:(CGFloat)font;
+
+/**
  获取文字宽度
 
  @param title 文字
