@@ -13,7 +13,7 @@
 @interface NSString (XLGExtension)
 
 #pragma mark - 判断字符串是否为空
-- (BOOL)isEmpty;
++ (BOOL)isEmpty:(id)string;
 
 #pragma mark - url编码
 - (NSString *)urlEncoding;

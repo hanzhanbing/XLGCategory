@@ -14,33 +14,36 @@
 
 /**
  判断字符串是否为空
- 
- @return YES 空
+
+ @param string 字符串
+ @return YES：空
  */
-- (BOOL)isEmpty {
++ (BOOL)isEmpty:(id)string {
     
-    if (self == nil) {
+    if (string == nil) {
         return YES;
     }
-    if (self == NULL) {
+    if (string == NULL) {
         return YES;
     }
-    if ([self isEqual:[NSNull null]]) {
+    if ([string isEqual:[NSNull null]]) {
         return YES;
     }
-    if ([self isEqualToString:@"(null)"]) {
+    
+    NSString *str = (NSString *)string;
+    if ([str isEqualToString:@"(null)"]) {
         return YES;
     }
-    if ([self isEqualToString:@"null"]) {
+    if ([str isEqualToString:@"null"]) {
         return YES;
     }
-    if([self isEqualToString:@"<null>"])
-    {
+    if([str isEqualToString:@"<null>"]) {
         return YES;
     }
-    if ([self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length==0) {
+    if ([str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length==0) {
         return YES;
     }
+    
     return NO;
 }
 

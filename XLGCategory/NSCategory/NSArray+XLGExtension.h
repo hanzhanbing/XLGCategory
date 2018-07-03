@@ -11,6 +11,9 @@
 
 @interface NSArray (XLGExtension)
 
+#pragma mark - 判断数组是否为空
++ (BOOL)isEmpty:(id)array;
+
 #pragma mark - 数组转json字符串【一整行，NSString/NSNumber/NSDictionary/NSArray适用】
 - (nullable NSString *)jsonStringEncoded;
 

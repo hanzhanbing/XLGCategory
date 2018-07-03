@@ -24,6 +24,9 @@
     NSLog(@"%f",width);
     NSLog(@"%@",[str md5To32bit]);
     
+    NSString *name = @"(null)";
+    NSLog(@"字符串是否为空：%@",[NSString isEmpty:name]?@"YES":@"NO");
+    
     return YES;
 }
 

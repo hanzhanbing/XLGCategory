@@ -12,6 +12,32 @@
 @implementation NSArray (XLGExtension)
 
 /**
+ 判断数组是否为空
+
+ @param array 数组
+ @return YES：空
+ */
++ (BOOL)isEmpty:(id)array {
+    
+    if (array == nil) {
+        return YES;
+    }
+    if (array == NULL) {
+        return YES;
+    }
+    if ([array isEqual:[NSNull null]]) {
+        return YES;
+    }
+    
+    NSArray *arr = (NSArray *)array;
+    if (arr.count==0) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+/**
  输出json字符串【一整行】
  
  @return json字符串

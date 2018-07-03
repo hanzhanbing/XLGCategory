@@ -12,6 +12,32 @@
 @implementation NSDictionary (XLGExtension)
 
 /**
+ 判断字典是否为空
+
+ @param dictionary 字典
+ @return YES：空
+ */
++ (BOOL)isEmpty:(id)dictionary {
+    
+    if (dictionary == nil) {
+        return YES;
+    }
+    if (dictionary == NULL) {
+        return YES;
+    }
+    if ([dictionary isEqual:[NSNull null]]) {
+        return YES;
+    }
+    
+    NSDictionary *dic = (NSDictionary *)dictionary;
+    if (dic.allKeys.count==0) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+/**
  输出json字符串【一整行】
  
  @return json字符串

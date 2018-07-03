@@ -11,6 +11,9 @@
 
 @interface NSDictionary (XLGExtension)
 
+#pragma mark - 判断字典是否为空
++ (BOOL)isEmpty:(id)dictionary;
+
 #pragma mark - 字典转json字符串【一整行，NSString/NSNumber/NSDictionary/NSArray适用】
 - (nullable NSString *)jsonStringEncoded;
 
