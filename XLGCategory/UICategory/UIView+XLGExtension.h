@@ -81,9 +81,4 @@ IB_DESIGNABLE
                 shadowBlur:(CGFloat)shadowBlur
               shadowOffset:(CGSize)shadowOffset;
 
-/**
- 水平view数组布局
- */
-- (void)distributeSpacingHorizontallyWith:(NSArray*)views;
-
 @end

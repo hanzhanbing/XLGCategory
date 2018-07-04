@@ -333,42 +333,4 @@
     [self.layer setMasksToBounds:NO];
 }
 
-/**
- 水平view数组布局
-
- @param views view数组
- */
-- (void)distributeSpacingHorizontallyWith:(NSArray*)views {
-    
-    NSMutableArray *spaces = [NSMutableArray arrayWithCapacity:views.count+1];
-    
-    for ( int i = 0 ; i < views.count+1 ; ++i ) {
-        UIView *view = [UIView new];
-        [spaces addObject:view];
-        [self addSubview:view];
-        
-        view.width = view.height;
-    }
-    
-    UIView *v0 = spaces[0];
-    v0.left = self.left;
-    v0.centerY = ((UIView*)views[0]).centerY;
-    
-    UIView *lastSpace = v0;
-    for (int i = 0 ; i < views.count; ++i ) {
-        UIView *obj = views[i];
-        UIView *space = spaces[i+1];
-        
-        obj.left = lastSpace.right;
-        
-        space.left = obj.right;
-        space.centerY = obj.centerY;
-        space.width = v0.width;
-        
-        lastSpace = space;
-    }
-    
-    lastSpace.right = self.right;
-}
-
 @end
